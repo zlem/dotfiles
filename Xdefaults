@@ -1,0 +1,15 @@
+urxvt*foreground: #f2f2f2
+urxvt*background: #000000
+urxvt*transparent: false
+urxvt*scrollBar: false
+URxvt.cursorUnderline:  true
+URxvt.cursorBlink:	true
+URxvt.perl-ext-common:  default
+URxvt.title: 		Terminal
+URxvt.font: xft: Terminus:pixelsize=8:antialias=false  
+URxvt.urgentOnBell:	 true
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.urlLauncher:      /usr/bin/google-chrome
+URxvt.matcher.button:   1
+URxvt.geometry: 	120x50 

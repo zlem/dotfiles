@@ -1,0 +1,16 @@
+Config { font = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-u"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Top 
+       , lowerOnStart = True
+       , commands = [ Run Battery ["-t","Batt: <left>% (<timeleft>)","-L","20","-H","40","--high","gray","--normal","yellow", "--low", "red"] 10
+			 							, Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Date "%a %b %_d %H:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %battery% | %cpu% | %memory% | %date%"
+
+}
